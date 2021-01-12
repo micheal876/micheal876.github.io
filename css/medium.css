@@ -1,1 +1,2 @@
-@media (min-width: 32.5em) {}
+@media all and (min-width: 32.5em) {
+}
