@@ -18,6 +18,12 @@ a, p {
     line-height: 150%;
 }
 
+h1{
+    text-align: center;
+    background-color: beige;
+    border-radius:2rem;
+}
+
 h2 {
     font-family: Ubuntu, Times New Roman, sans-serif;
     font-size: 120%;
@@ -41,7 +47,7 @@ img {
 .artForm {
     border-bottom: 1.4px solid black;
     padding-bottom: 6px;
-    color: #03a086;
+    color: #0342a0;
     font-size: 120%;
 }
 
@@ -51,13 +57,20 @@ img {
 }
 
 #principle3 {
-    max-height: 665px;
+    max-height: 730px;
 }
 
 #principle2 {
     max-height: 730px;
 }
 
+footer {
+    background-color: rgb(16, 211, 136);
+    color: white;
+    text-align: center;
+    padding: 0.35rem;
+    border-radius: 15px;
+  }
 
 
 @media only screen and (max-width: 800px) {
