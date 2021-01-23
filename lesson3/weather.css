@@ -2,7 +2,7 @@
 body {
   font-size: 16px;
   font-family: "Lemonada", cursive "Montserrat", sans-serif;
-  background-color: rgb(205, 219, 230);
+  background-color: #F1DAC4;
 }
 
 /*--------------nav bar-------------*/
@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: darkgoldenrod;
+  background-color: #A69CAC;
   border-radius: 5rem;
   height: 70px;
   border-bottom: 1px solid rgba(51, 51, 51, 0.138);
@@ -28,13 +28,14 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.59);
+  color: #161B33;
   transition: 0.3s ease;
 }
 .nav-links a:hover {
   color: rgb(71, 204, 180);
 }
 .plan {
+  
   background-color: darkcyan;
   text-align: center;
   border-radius: 10rem;
@@ -67,7 +68,7 @@ footer p {
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   main {
     display: grid;
     grid-template-columns: 1fr;
