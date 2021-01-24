@@ -19,10 +19,11 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 70%;
+  width: 100%;
 }
 
 .nav-links li {
+  font-size: 20px;
   list-style-type: none;
 }
 
@@ -35,7 +36,7 @@ nav {
   color: rgb(71, 204, 180);
 }
 .plan {
-  
+
   background-color: darkcyan;
   text-align: center;
   border-radius: 10rem;
