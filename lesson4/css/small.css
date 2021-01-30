@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap");
+
+
+body {
+    font-family: "Lemonada", cursive "Montserrat", sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 0.5em;
+    background-color:  #f1dac4 ;
+
+}
+h1, h2, h3, h4 {
+    font-family:cursive;
+}
+.content, p { 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.heading-l {
+    background-color:  #474973;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    padding: 1em;
+    margin-bottom: 2em;
+    border: dashed;
+}
+nav {
+    margin: 0 auto;
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.navigation a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    color: #bff0d4;
+    background-color: #161b33;
+    font-weight: 500;
+}
+.navigation a:hover {
+color: #0d0c1d;
+background-color: #0b3f7a ;
+}
+.responsive li {
+    display: block;
+}
+#placeholder {
+    width: 100%;
+}
+footer {
+    background-color:  #a69cac;
+}
+.footer {
+text-align: center;
+}
