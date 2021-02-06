@@ -7,56 +7,114 @@ body {
     margin: 0 auto;
     font-size: 20px;
     padding: 0.5em;
-    background-color:  #f1dac4 ;
+    background-color:  #a69cac ;
 
 }
-h1, h2, h3, h4 {
-    font-family:cursive;
-}
-.content, p { 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.heading-l {
-    background-color:  #474973;
+header {
+    padding: .5rem 2%;
+    background-color: #ffffff;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    max-width: 100%;
 }
 
-.content {
-    padding: 1em;
-    margin-bottom: 2em;
-    border: dashed;
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    padding: 2px 2%;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Rock Salt', cursive;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5rem;
+} 
+
+
+/*----------- NAVIGATION --------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
 nav {
-    margin: 0 auto;
+    background: #3a506b;
+    background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+    font-family: 'Gayathri';
 }
-.navigation {
-    list-style: none;
+
+nav ul {
+    list-style-type: none;
     padding: 0;
+    margin: 0;
 }
-.navigation li:first-child {
+
+nav ul li a {
     display: block;
+    color: white;
+    padding: .5rem 2%;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
 }
-.navigation li {
+
+nav ul li.active a {
+    background-color: #0b3f7a;
+    color: black;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: #3A506B;
+    color: white;
+}
+
+nav ul.hide {
     display: none;
 }
-.navigation a {
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    padding: 1em;
-    color: #bff0d4;
-    background-color: #161b33;
-    font-weight: 500;
+
+/*----------- MAIN --------------*/
+main {
+    padding: .5rem 2%;
+    min-height: 10rem;
+    font-family: 'Gayathri';
 }
-.navigation a:hover {
-color: #0d0c1d;
-background-color: #0b3f7a ;
+
+main img.screen { 
+    width: 480px;
 }
-.responsive li {
-    display: block;
+
+main img.none { 
+    width: 250px;
 }
+
+main section {
+    font-family: 'Gayathri';
+    padding: .5rem 2%;
+    border: 1px #000000;
+    margin: 10px 0;
+    background: #474973;
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #6fffe9 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#6fffe9 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#6fffe9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#6fffe9',GradientType=0 );
+    font-size: 1.3rem;
+}
+
 .hero {
     margin: 0 auto;
     padding: 0;
@@ -84,12 +142,13 @@ background-color: #0b3f7a ;
     text-align: center;
 }
 
+.pre{
+    text-align: center;
+    color: steelblue;
+}
+
 
 /* ------------forcast formatting -------- */
-
-.day{
-    text-align: center;
-}
 .weather {
     display: none;
 }
@@ -97,7 +156,7 @@ background-color: #0b3f7a ;
 
 /* -------------city formatting --------------*/  
 .article {
-    background: #5bc0be
+    background: #474973;
 }
 
 .family img {
@@ -129,20 +188,25 @@ background-color: #0b3f7a ;
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/*----------- FOOTER --------------*/
 footer {
-    background-color:  #a69cac;
+    justify-content: center;
+    display: flex;
+    padding: .5rem 2%;
+    text-align: center;
+    color: #ffffff;
+    background: #5bc0be;
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#3a506b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
+    font-family: "Montserrat";
 }
-.footer {
-text-align: center;
-}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
