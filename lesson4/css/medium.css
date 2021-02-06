@@ -1,15 +1,48 @@
-@media only screen and (min-width: 32.5em) {
-  .navigation {
-      display: flex;
-  }
-  .navigation li {
-      display: block;
-      flex: 1 1 auto;
-  }
-  .navigation a {
-      text-align: center;
-  }
-  .navigation li:first-child {
-      display: none;
-  }
+@media screen and (min-width: 35em) {
+  
+    header img {
+        width: 70px;
+    }
+    header h1 {
+        font-size: 1.7rem;
+    }
+    header h2 {
+        font-size: 1.4rem;
+    }
+    nav {
+        display: flex;
+    }
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+    
+    nav ul li {
+       display: block;
+       flex: 1 1 auto;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid black;
+        padding: .6rem 1rem;
+        font-size: .78rem;
+    }
+
+    section.forecast { 
+        display: inline;
+    }
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th {
+        background-color: white;
+    }
+    .forecastTable {
+        width: 700px;
+        padding: .5rem 2%;
+    }
+
 }

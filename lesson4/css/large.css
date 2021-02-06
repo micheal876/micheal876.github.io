@@ -1,5 +1,20 @@
-@media only screen and (min-width: 65em) {
-    body {
-        font-size: 1.7em;
+@media only screen and (min-width: 65rem) {
+    header, nav, footer, main {
+        max-width: 1024px;
+        margin: 0 auto;
     }
-}
+    header img {
+        width: 80px;
+    }
+    header h1 {
+        font-size: 2.0rem;
+    }
+    header h2 {
+        font-size: 1.7rem;
+    }
+    nav ul li a {
+        padding: .8rem 1.4rem;
+        font-size: .9rem;
+    }
+    
+    }

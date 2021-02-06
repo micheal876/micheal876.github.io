@@ -1,11 +1,35 @@
-const menu = document.querySelector('.menu')
-const navigation = document.querySelector('.navigation');
-
-menu.addEventListener('click', () => {navigation.classList.toggle('responsive')}, false)
-
-try {
-    const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
-    document.getElementById('currentdate').textContent = new Date(). toLocaleDateString('en-US', options);   
-} catch (e) {
-    alert(' browser does not support Locate');
+function toggleMenu() {
+    document.getElementById("navigation").classList.toggle("hide");
 }
+
+    const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ];
+
+    const months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+    ];
+    
+    const d = new Date();
+    const dayName = days[d.getDay()];
+    const monthName = months[d.getMonth()];
+    const year = d.getFullYear();
+    const fulldate = dayName + ", " + d.getDate() + " " + monthName + " " + year;
+    document.getElementById("currentDate").textContent = fulldate;
