@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>REAL WEATHER</h1>
+                <h2>stay dry with the real</h2>
+            </div>
+        </header>
+    </div>
+    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>    
+                <li><a href="#">Storm Center</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <div id="banner" hidden>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <h1 class="pre">Preston</h1>
+        <section class="hero">
+            <div class="hero-img">
+                <picture>
+                    <source srcset="images/medium.jpeg" media="(min-width: 500px) and (max-width: 1199px)">
+                    <source srcset="images/medium.jpeg" media="(min-width: 1200px)">
+                    <img src="images/small.jpeg" alt="Provided Image">
+                </picture>
+
+                <div class="summary">
+                    <h2>Today's Weather</h2>
+                        <p>Current Temperature: <span id="temp">75</span>&deg;</p>
+                        <p>Current Wind Speed: <span id="speed">20</span>mph</p>
+                        <p id="chill">message</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="weather">
+            <h2>Five day Forecast</h2>
+            <div class="forecast">
+                <div>
+                    <h5>Monday</h5>
+                    <img src="images/sun.png" alt="sunny icon">
+                    <span>75&deg;</span>
+                </div>
+                <div>
+                    <h5>Tuesday</h5>
+                    <img src="images/partly-cloudy.png" alt="partly cloudy icon">
+                    <span>62&deg;</span>
+                </div>
+                <div>
+                    <h5>Wednesday</h5>
+                    <img src="images/rainy.png" alt="rainy icon">
+                    <span>54&deg;</span>
+                </div>
+                <div>
+                    <h5>Thursday</h5>
+                    <img src="images/rainy.png" alt="rainy icon">
+                    <span>57&deg;</span>
+                </div>
+                <div>
+                    <h5>Friday</h5>
+                    <img src="images/sun.png" alt="sunny icon">
+                    <span>78&deg;</span>
+                </div>
+            </div>
+        </section>
+        
+        <section class="article">
+            <h2>About Preston</h2>
+
+            <p>Information about the weather will go here.</p>
+
+            <p>Information about the weather will go here.</p>
+
+            <p>Information about the weather will go here.</p>
+            <div class="family"><img src="images/family.jpg" alt="family looking at the sunset on the beach "></div>
+        </section>
+        
+        <section class="contactInfo">
+        <h1>Contact Us</h1>
+            <div class="info">
+              <div class="address">
+                <h3>Address</h3>
+                <p> 234 address buliding 4 </p>
+                <p>234 address buliding 4</p>
+              </div>
+              <div class="contact">
+                <h3>Phone</h3>
+                <p>(000)123-4567</p>
+                <h3>Email</h3>
+                <p>realweather@real.net</p>
+              </div>
+            </div>
+            <div class="map">
+              <img src="images/map.png" alt="Map of Preston"/>
+            </div>
+          </section>     
+    </main>
+    
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+            <p id="currentDate"></p>
+        </footer>
+    </div>
+    
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+
+</body>
+
+</html>
