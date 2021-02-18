@@ -16,8 +16,8 @@
         <header>
             <img src="images/logo.png" alt="logo">
             <div>
-                <h1>REAL WEATHER</h1>
-                <h2>stay dry with the real</h2>
+                <h1>REAL SHADY WEATHER</h1>
+                <h2>stay dry and in the shade with the real Weather</h2>
             </div>
         </header>
     </div>
@@ -27,96 +27,57 @@
             <button onclick="toggleMenu()">&#9776;</button>
             <ul id="navigation" class="hide">
                 <li><a href="#">Home</a></li>
-                <li class="active"><a href="#">Preston</a></li>
+                <li><a href="#">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>    
                 <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
             </ul>
         </nav>
     </div>
     
     <main>
-        <div id="banner" hidden>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
-        <h1 class="pre">Preston</h1>
-        <section class="hero">
-            <div class="hero-img">
-                <picture>
-                    <source srcset="images/medium.jpeg" media="(min-width: 500px) and (max-width: 1199px)">
-                    <source srcset="images/medium.jpeg" media="(min-width: 1200px)">
-                    <img src="images/small.jpeg" alt="Provided Image">
-                </picture>
-
-                <div class="summary">
-                    <h2>Today's Weather</h2>
-                        <p>Current Temperature: <span id="temp">75</span>&deg;</p>
-                        <p>Current Wind Speed: <span id="speed">20</span>mph</p>
-                        <p id="chill">message</p>
+        <h1 class="wet">Weather Gallery</h1>
+            <div class="galleryWrapper">
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy1.jpg" alt="cloudy"> 
+                    <div class="text">cloudy image</div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="weather">
-            <h2>Five day Forecast</h2>
-            <div class="forecast">
-                <div>
-                    <h5>Monday</h5>
-                    <img src="images/sun.png" alt="sunny icon">
-                    <span>75&deg;</span>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy2.jpg" alt="cloud">
+                    <div class="text">cloudy image</div>
                 </div>
-                <div>
-                    <h5>Tuesday</h5>
-                    <img src="images/partly-cloudy.png" alt="partly cloudy icon">
-                    <span>62&deg;</span>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy3.jpg" alt="cloudy">
+                    <div class="text">cloudy image</div>
                 </div>
-                <div>
-                    <h5>Wednesday</h5>
-                    <img src="images/rainy.png" alt="rainy icon">
-                    <span>54&deg;</span>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny1.jpg" alt="sunny">
+                    <div class="text">sunny image</div>
                 </div>
-                <div>
-                    <h5>Thursday</h5>
-                    <img src="images/rainy.png" alt="rainy icon">
-                    <span>57&deg;</span>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny2.jpg" alt="sunny">
+                    <div class="text">sunny image</div>
+                </div>    
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny3.jpg" alt="sunny">
+                    <div class="text">sunny image</div>
                 </div>
-                <div>
-                    <h5>Friday</h5>
-                    <img src="images/sun.png" alt="sunny icon">
-                    <span>78&deg;</span>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src='images/snowy1.jpg' alt="snowy">
+                    <div class="text">snow image</div>
                 </div>
-            </div>
-        </section>
-        
-        <section class="article">
-            <h2>About Preston</h2>
-
-            <p>Information about the weather will go here.</p>
-
-            <p>Information about the weather will go here.</p>
-
-            <p>Information about the weather will go here.</p>
-            <div class="family"><img src="images/family.jpg" alt="family looking at the sunset on the beach "></div>
-        </section>
-        
-        <section class="contactInfo">
-        <h1>Contact Us</h1>
-            <div class="info">
-              <div class="address">
-                <h3>Address</h3>
-                <p> 234 address buliding 4 </p>
-                <p>234 address buliding 4</p>
-              </div>
-              <div class="contact">
-                <h3>Phone</h3>
-                <p>(000)123-4567</p>
-                <h3>Email</h3>
-                <p>realweather@real.net</p>
-              </div>
-            </div>
-            <div class="map">
-              <img src="images/maps.png" alt="Map of Preston"/>
-            </div>
-          </section>     
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/snowy2.jpg" alt="snowy">
+                    <div class="text">snow image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/snowy3.jpg" alt="snowy">
+                    <div class="text">snow image</div>
+                </div>
+            </div>      
+            <script src="js/lazyload.js"></script>
+       
     </main>
     
     <div id="footerWrapper">

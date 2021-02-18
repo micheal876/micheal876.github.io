@@ -93,3 +93,26 @@
         margin-right: auto;
         width: 100%;
     }
+    .map {
+    flex: 1.5;
+}
+
+.map img {
+    width: 100%;
+    margin: 2px;
+}
+
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.gallery {
+    margin: 20px;
+}
+
+.gallery:hover {
+    box-shadow: 0 0 10px #60ebeb;
+}
+ 
+}
