@@ -11,13 +11,13 @@
 
 form fieldset {
     margin: 2rem 0;
-    border: 1ps solid #5bc0be;
+    border: 1ps solid #cde01a;
     border-radius: 10px;
     padding: .5rem 2%;
 }
 
 form legend {
-    color: #5bc0be;
+    color: #0ad9f5;
     margin: 0 1rem;
     padding: 0 .5rem;
 }
@@ -50,7 +50,7 @@ form label.si {
 
 form input.submitBtn {
     border: none;
-    background-color: #5bc0be;
+    background-color: #6dcf1d;
     color: black;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
