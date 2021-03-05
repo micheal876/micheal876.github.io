@@ -1,11 +1,11 @@
 body {
-    font-family: 'Rock Salt', cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1rem;
     margin: 0;
 }
 
 h1, h2 {
-    font-family: 'Gayathri';
+    font-family: cursive;
     color: #3a506b;
     text-align: center;
 }
