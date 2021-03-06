@@ -1,0 +1,133 @@
+@media only screen and (min-width: 35rem) {
+
+    header {
+        padding: 5px;
+    }
+    
+    header img {
+        width: 100px;
+    }
+    
+    .headings h1 {
+        font-size: 2rem;
+        letter-spacing: .14rem;
+    }
+    
+    .headings h2 {
+        font-size: 1.2rem;
+        letter-spacing: .08rem;
+    }
+    
+    nav {
+        display: flex;
+    }
+    
+    nav button {
+        display: none;
+    }
+    
+    nav ul.hide {
+        display: flex;
+    }
+    
+    nav ul li {
+       display: block;
+       flex: 1 1 auto;
+    }
+    
+    nav ul li a {
+        border: none;
+        border-right: 1px solid black;
+        padding: .6rem 1rem;
+        font-size: .78rem;
+    }
+    
+    .weather {
+        display: block;
+        background: #5bc0be
+    }
+    
+    .forecast {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding: 0;
+        margin: 10px auto;
+    }
+    
+    .forecast div {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 150px;
+        text-align: center;
+        background-color: #fff;
+        padding: 0;
+        margin: 2px;
+        border: 1px black solid;
+        border-radius: 10px;
+    }
+    
+    .forecast div h5 {
+        background: radial-gradient(white, #5bc0be, #3a506b);
+        color: black;
+        padding: 8px;
+        margin: 1px;
+        border-bottom: black 1px solid;
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .forecast div img {
+        margin: 7px auto;
+        max-width: 5rem;
+    }
+        
+    .forecast div span {
+        margin: 7px auto;
+    }
+    
+    .family {
+        padding: 20px;
+        max-width: 600px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .map {
+    flex: 1.5;
+}
+
+.map img {
+    width: 100%;
+    margin: 2px;
+}
+
+.galleryWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+div.gallery {
+    margin: 20px;
+}
+
+.gallery:hover {
+    box-shadow: 0 0 10px #60ebeb;
+}
+ 
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.cards div:nth-child(2) figure {
+    grid-column: 1;
+    grid-row: 1;
+}
+.cards div:nth-child(2) section {
+    grid-column: 2;
+}
+
+}
