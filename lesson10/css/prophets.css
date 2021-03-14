@@ -1,0 +1,75 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: cursive;
+    color: #3a506b;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 7px;
+}
+
+main {
+    background-color: #F5F5F5;  
+    box-shadow: 0 0 20px #333;
+    padding: 15px;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+section {
+    background-color: #6FFFE9;
+    border: 1px solid #3a506b;
+    justify-items: center;
+    padding: 0px;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 130px;
+    margin: 10px auto;
+    box-shadow: 0 0 20px #333;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    padding-bottom: 10px;   
+}
+
+
+@media only screen and (min-width: 35rem) {
+    main {
+        width: 98%;
+        margin: 10px auto;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 64rem) {
+    main {
+        width: 95%;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

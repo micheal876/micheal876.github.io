@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>REAL SHADY WEATHER</h1>
+                <h2>stay dry and in the shade with the real Weather</h2>
+            </div>
+        </header>
+    </div>
+    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Preston</a></li>
+                <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li>    
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="#">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <h1 class="wet">Weather Gallery</h1>
+            <div class="galleryWrapper">
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy1.jpg" alt="cloudy"> 
+                    <div class="text">cloudy image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy2.jpg" alt="cloud">
+                    <div class="text">cloudy image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/cloudy3.jpg" alt="cloudy">
+                    <div class="text">cloudy image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny1.jpg" alt="sunny">
+                    <div class="text">sunny image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny2.jpg" alt="sunny">
+                    <div class="text">sunny image</div>
+                </div>    
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/sunny3.jpg" alt="sunny">
+                    <div class="text">sunny image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src='images/snowy1.jpg' alt="snowy">
+                    <div class="text">snow image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/snowy2.jpg" alt="snowy">
+                    <div class="text">snow image</div>
+                </div>
+                <div class= "gallery">   
+                    <img src="images/placeholder.jpg" data-src="images/snowy3.jpg" alt="snowy">
+                    <div class="text">snow image</div>
+                </div>
+            </div>      
+            <script src="js/lazyload.js"></script>
+       
+    </main>
+    
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+            <p id="currentDate"></p>
+        </footer>
+    </div>
+    
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/towns.js"></script>
+
+</body>
+
+</html>
