@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>REAL SHADY WEATHER</h1>
+                <h2>stay dry and in the shade with the real Weather</h2>
+            </div>
+        </header>
+    </div>
+    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>    
+                <li class="active"><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <h1>Storm Center Form</h1>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Reporters Information</legend>
+                            <label class="top">Full Name* <input type="text" name="fname" pattern="[A-Za-z ]{5,}" required></label>
+                            <label class="top">Email* <input type="email" name="email" placeholder="example@gmail.com" required></label>
+                            <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                            <label class="top">Zip Code* <input type="number" name="zip" required></label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Storm Information</legend>
+                        <div>Date</div>
+                            <label class="si"><input type="date" name="date" value="2020-01-01"></label>
+                            <label class="top">Storm Type
+                                <select name="type">
+                                    <option value="">Please Select</option>
+                                    <option value="flash flood">Flash Flood</option>
+                                    <option value="hail">Hail</option>
+                                    <option value="hurricane">Hurricane</option>
+                                    <option value="thunderstorm">Thunderstorm</option>
+                                    <option value="tornado">Tornado</option>
+                                </select>
+                            </label>
+                        <div>Rating</div>
+                            <label class="flexly" for="rating"> &nbsp;&nbsp;&nbsp; 
+                                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRting(this.value)" onchange="adjustRating(this.value)">
+                                    <span id="ratingvalue">5</span>
+                            </label>
+                            <datalist id="tickmarks">
+                                <option value="0">
+                                <option value="1">
+                                <option value="2">
+                                <option value="3">
+                                <option value="4">
+                                <option value="5">
+                                <option value="6">
+                                <option value="7">
+                                <option value="8">
+                                <option value="9">
+                                <option value="10">
+                            </datalist>
+                            <label class="top">Storm Region
+                                <select name="type">
+                                    <option value="" selected disabled>Select Region</option>
+                                    <option value="preston">Preston</option>
+                                    <option value="soda springs">Soda Springs</option>
+                                    <option value="fist haven">Fish Haven</option>
+                                </select>
+                            </label>
+                            <div>Personal Danger Level</div>
+                                <label class="si"><input type="radio" name="danger" value="yes"> Yes</label>
+                                <label class="si"><input type="radio" name="danger" value="maybe"> Maybe</label>
+                                <label class="si"><input type="radio" name="danger" value="no"> No</label>
+                    </fieldset>
+                    
+                    
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                            <label class="top">Comments</label>
+                                <textarea id="top" rows="5" cols="38"></textarea>
+                    </fieldset>
+            
+                    <input type="submit" value="Send To Storm Center" class="submitBtn">
+            
+                </form> 
+       
+    </main>
+    
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+            <p id="currentDate"></p>
+        </footer>
+    </div>
+    
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/towns.js"></script>
+
+</body>
+
+</html>

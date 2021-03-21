@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>REAL WEATHER</h1>
+                <h2>stay dry with the real</h2>
+            </div>
+        </header>
+    </div>
+    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li ><a href="preston.html">Preston</a></li>
+                <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>    
+                <li><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main>
+        <div id="banner" hidden>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <h1 class="pre">Preston</h1>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/hero.jpg" width="400" height="300" alt="photo of ligtning">
+                <div class="summary">
+                    <h2>Today's Weather</h2>
+                            <p>Current: <span id="current"></span></p>
+                            <p>Today's High: <span id="currentTemp">00</span>&deg;</p>
+                            <p>Humidity: <span id="humidity">%</span></p>
+                            <p>Wind Speed: <span id="windSpeed">xx</span>mph</p>
+                            <p>Wind Chill: <span id="chill"></span></p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="weather">
+                
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <div class="forecast">
+                <div class="days">
+                    <p class="forecasttop" id="dayofweek1"></p>
+                    <img id="img1" src="" alt="">
+                    <p><span id="forecast1"></span> &#8457;</p>
+                </div>
+                <div class="days">
+                    <p class="forecasttop" id="dayofweek2"></p>
+                    <img id="img2" src="" alt="">
+                    <p><span id="forecast2"></span> &#8457;</p>
+                </div>
+                <div class="days">
+                    <p class="forecasttop" id="dayofweek3"></p>
+                    <img id="img3" src="" alt="">
+                    <p><span id="forecast3"></span> &#8457;</p>
+                </div>
+                <div class="days">
+                    <p class="forecasttop" id="dayofweek4"></p>
+                    <img id="img4" src="" alt="">
+                    <p><span id="forecast4"></span> &#8457;</p>
+                </div>
+                <div class="days">
+                    <p class="forecasttop" id="dayofweek5"></p>
+                    <img id="img5" src="" alt="">
+                    <p><span id="forecast5"></span> &#8457;</p>
+                </div>
+            </div>
+        </div>
+            </section>
+        
+        <section class="article">
+            <h2>About Preston</h2>
+
+            <p>Information about the weather will go here.</p>
+
+            <p>Information about the weather will go here.</p>
+
+            <p>Information about the weather will go here.</p>
+            <div class="family"><img src="images/family.jpg" alt="family looking at the sunset on the beach "></div>
+        </section>
+        
+        <section class="contactInfo">
+        <h1>Contact Us</h1>
+            <div class="info">
+              <div class="address">
+                <h3>Address</h3>
+                <p> 234 address buliding 4 </p>
+                <p>234 address buliding 4</p>
+              </div>
+              <div class="contact">
+                <h3>Phone</h3>
+                <p>(000)123-4567</p>
+                <h3>Email</h3>
+                <p>realweather@real.net</p>
+              </div>
+            </div>
+            <div class="maps">
+              <img src="images/map.jpg"  alt="Map of Preston"/>
+            </div>
+          </section>     
+    </main>
+    
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+            <p id="currentDate"></p>
+        </footer>
+    </div>
+    
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/weather.js"></script>
+
+
+</body>
+
+</html>

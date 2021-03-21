@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap");
+
+
+body {
+    font-family: "Lemonada", cursive "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 0.5em;
+    background-color:  #a69cac ;
+
+}
+header {
+    padding: .5rem 2%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 80px;
+    padding: 2px 2%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Rock Salt', cursive;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.5rem;
+} 
+
+
+/*----------- NAVIGATION --------------*/
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: black;
+}
+
+nav {
+    background: #3a506b;
+    background: -moz-linear-gradient(top,  #3a506b 0%, #5bc0be 100%);
+    background: -webkit-linear-gradient(top,  #3a506b 0%,#5bc0be 100%);
+    background: linear-gradient(to bottom,  #3a506b 0%,#5bc0be 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a506b', endColorstr='#5bc0be',GradientType=0 );
+    font-family: 'Gayathri';
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 2%;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #0b3f7a;
+    color: black;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    background-color: #3A506B;
+    color: white;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: .5rem 2%;
+    min-height: 10rem;
+    font-family: 'Gayathri';
+}
+
+main img.screen { 
+    width: 480px;
+}
+
+main img.none { 
+    width: 250px;
+}
+
+main section {
+    font-family: 'Gayathri';
+    padding: .5rem 2%;
+    border: 1px #000000;
+    margin: 10px 0;
+    background: #474973;
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #6fffe9 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#6fffe9 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#6fffe9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#6fffe9',GradientType=0 );
+    font-size: 1.3rem;
+}
+
+.galleryWrapper {
+    display: block;
+}
+
+div.gallery {
+    margin: 5px;
+    border: solid 3px #5bc0be;
+}
+
+div.gallery img {
+    padding: 15px;
+    width: 90%;
+}
+
+.gallery:hover {
+    box-shadow: 0 0 10px #60ebeb;
+}
+ 
+
+
+div.text {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+.hero {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    border: 2px solid black;
+    background: #5bc0be
+}
+
+.hero-img img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.summary {
+    position: absolute;
+	bottom: 25px;
+	left: 20px;
+	background: #5bc0be;
+	border: 1px solid black;
+	padding: .4rem;
+	box-shadow: 0 0 30px rgb(206, 162, 200);
+    opacity: .7;
+    color: black;
+    text-align: center;
+    max-height: 400px;
+    font-size: 1.1rem;
+}
+
+.pre{
+    text-align: center;
+    color: steelblue;
+}
+
+
+/* ------------forcast formatting -------- */
+.forecast {
+    display: none;
+}
+
+.forecastdays {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 8rem;
+}
+
+.days  {
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.forecasttop{
+    background-color: #50c9ce;
+    margin: 0;
+    padding: 1rem;
+    font-variant: small-caps;
+    border-bottom: 1px solid black;
+}
+
+.days img {
+    padding-top: 1.5rem;
+    width: auto;
+}
+
+
+/* -------------city formatting --------------*/  
+.article {
+    background: #474973;
+}
+
+.family img {
+    max-width: 100%;
+    padding: 10px;
+}
+
+
+/* ------------contact formatting -----------*/
+.contactInfo {
+    text-align: center;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+}
+
+.contact, .address {
+    flex: 1;
+}
+  
+.address p, .contact p {
+    margin: 15px auto;
+}
+  
+.map img {
+    display: none;
+  }
+
+  .wet{
+      text-align: center;
+  }
+
+  /* ------------ cards formatting ------------*/
+section.home {
+    text-align: center;
+    color: #3a506b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body > main > section > div > section:nth-child(1), body > main > section > div > section:nth-child(2), body > main > section > div > section:nth-child(3) {
+    border: 1px solid #5bc0be;
+}
+
+section.home > h2 {
+    color: #5bc0be;
+}
+
+div.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-evenly;
+    grid-gap: 5px;
+    padding: 10px 2%;
+    margin: 0 auto;
+    overflow: auto;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+div.cards img {
+    width: 62%;
+    max-height: 250px;
+    padding: 5px;
+    margin: 10px;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px 0 #333, 0 6px 20px 0 black;
+}
+
+
+
+
+/* ------------ contact formatting -----------*/
+.contactInfo {
+    text-align: center;
+    margin: 0;
+}
+
+.info {
+    display: flex;
+}
+
+.contact, .address {
+    flex: 1;
+}
+  
+.address p, .contact p {
+    margin: 15px auto;
+}
+  
+.map img {
+    display: none;
+  }
+
+/*----------- FOOTER --------------*/
+footer {
+    justify-content: center;
+    display: flex;
+    padding: .5rem 2%;
+    text-align: center;
+    color: #ffffff;
+    background: #5bc0be;
+    background: -moz-linear-gradient(top,  #5bc0be 0%, #3a506b 100%);
+    background: -webkit-linear-gradient(top,  #5bc0be 0%,#3a506b 100%);
+    background: linear-gradient(to bottom,  #5bc0be 0%,#3a506b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5bc0be', endColorstr='#3a506b',GradientType=0 );
+    font-family: "Montserrat";
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

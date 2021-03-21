@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&family=Montserrat:wght@300&display=swap">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <div>
+                <h1>REAL SHADY WEATHER</h1>
+                <h2>stay dry and in the shade with the real Weather</h2>
+            </div>
+        </header>
+    </div>
+    
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="sodasprings.html">Soda Springs</a></li>
+                <li><a href="fishhaven.html">Fish Haven</a></li>    
+                <li><a href="StormCenter.html">Storm Center</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <main> 
+        <div id="banner" hidden>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</div>
+        <h1 class="pre">Preston</h1>
+        <section class="hero">
+            <div class="hero-img">
+                <img src="images/hero.jpeg" width="400" height="300" alt="photo of ligtning">
+        <section>
+            <h2>Town Information</h2>
+            <div class="cards">
+            </div>
+        </section>
+
+        <section class="contactInfo">
+            <h1>Contact Us</h1>
+                <div class="info">
+                  <div class="address">
+                    <h3>Address</h3>
+                    <p>999 W Street Name</p>
+                    <p>Colorado Springs, CO 81978</p>
+                  </div>
+                  <div class="contact">
+                    <h3>Phone</h3>
+                    <p>(999)123-4567</p>
+                    <h3>Email</h3>
+                    <p>weather@weather.net</p>
+                  </div>
+                </div>
+                <div class="map">
+                  <img src="images/map.jpg" alt="Map of Preston"/>
+                </div>
+              </section>
+       
+    </main>
+    
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+            <p id="currentDate"></p>
+        </footer>
+    </div>
+    
+    <script src="js/site.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/rating.js"></script>
+    <script src="js/lazyload.js"></script>
+    <script src="js/webfont.js"></script>
+    <script src="js/towns.js"></script>
+
+</body>
+</html>
