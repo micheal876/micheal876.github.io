@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Passero+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/join.css">
+
+    <title>here to help</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="titlelogo">
+            <div class="title">
+                <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+                <h1></h1>
+                <p>Here to make your business great</p>
+            </div>
+           
+        </div>
+    </header>
+
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li ><a href="index.html">HOME</a></li>
+                <li><a href="city.html">CITY</a></li>
+                <li class="active"><a href="join.html">JOIN US</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>    
+                <li><a href="Contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+        <main>
+            <form>  
+                <div class="container">
+                <hr>  
+                <label> Firstname </label>   
+              <input type="text" name="firstname" placeholder= "Firstname" size="15" required />      
+              <label> Lastname: </label>    
+              <input type="text" name="lastname" placeholder="Lastname" size="15"required />
+              <label> Title: </label>    
+              <input type="text" placeholder="title" size="15"required />   
+              <label>   
+              Phone :  
+              </label>  
+              <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+              <input type="text" name="phone" placeholder="phone no." size="10" required>   
+              business Name :  
+              <textarea cols="80" rows="5" placeholder="business name" value="name" required>  
+              </textarea>
+              business website :  
+              <textarea cols="80" rows="5" placeholder="business website" value="website" required>  
+              </textarea>  
+              business Address :  
+              <textarea cols="80" rows="5" placeholder="business Address" value="address" required>  
+              </textarea>  
+               <label for="email"><b>Email</b></label>  
+               <input type="text" placeholder="Enter Email" name="email" required>  
+                
+              </form>  
+
+               <h1>price plans</h1>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3 class="pricing-card-header">Non-profit</h3>
+                    <div class="price"><sup>$</sup>100<span>MO</span></div>
+                        <ul>
+                            <li>listing</li>
+                            <li>business</li>
+                            
+                        </ul>
+                        <a href="#" class="order-btn">Order Now</a>
+
+
+                    </div>
+
+                    <div class="pricing-card">
+                        <h3 class="pricing-card-header">Bronze</h3>
+                        <div class="price"><sup>$</sup>200<span>MO</span></div>
+                            <ul>
+                                <li>Listing</li>
+                                <li>Business</li>
+                                <li>training</li>
+                            </ul>
+                            <a href="#" class="order-btn">Order Now</a>
+    
+    
+                        </div>
+                        <div class="pricing-card">
+                            <h3 class="pricing-card-header">Sliver</h3>
+                            <div class="price"><sup>$</sup>400<span>MO</span></div>
+                                <ul>
+                                    <li>Listing</li>
+                                    <li>Business</li>
+                                    <li>Trainings</li>
+                                    <li>Social media posts</li>
+                                </ul>
+                                <a href="#" class="order-btn">Order Now</a>
+        
+        
+                            </div>
+                            <div class="pricing-card">
+                                <h3 class="pricing-card-header">Gold</h3>
+                                <div class="price"><sup>$</sup>1000<span>MO</span></div>
+                                    <ul>
+                                        <li>Listing</li>
+                                        <li>Business</li>
+                                        <li>Trainings</li>
+                                        <li>Social media posts</li>
+                                        <li>Luncheon Tickets</li>
+                                        <li>Sponsorships</li>
+                                    </ul>
+                                    <a href="#" class="order-btn">Order Now</a>
+            
+            
+                                </div>
+                </div>
+                
+                <button type="submit" class="registerbtn">Register</button>    
+
+
+        </main>
+    </div>
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+        </footer>
+    </div>
+    <script src="java/main.js"></script>
+    <script src="java/weather.js"></script>
+</body>
+
+</html>

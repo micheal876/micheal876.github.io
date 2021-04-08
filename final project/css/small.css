@@ -1,0 +1,417 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: auto;
+    background-color: #8cfffe;
+    max-width: 1100px;
+}
+
+a:visited {
+    color: #7068ff;
+}
+
+ul, ol {
+    margin: 2%;
+}
+
+/*------------------Header---------------------*/
+header {
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    color: #ff825c;
+    border-bottom: 5px solid #58ff47;
+    padding: 2% 2% 120px 2%;
+    max-height: 250px;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 2%;
+    text-align: end;
+    display: grid;
+}
+
+.title {
+    display: inline-block;
+    text-align: center;
+}
+
+header img {
+    width: 70px;
+}
+
+.titlelogo {
+    grid-area: 1/2/2/3;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Passero One', cursive;
+    font-size: 60px;
+}
+
+header p {
+    max-width: 100%;
+    padding: 0px;
+    margin: -15px;
+}
+/*-------------------------------------Call to Action--------------------------*/
+
+.rentnow {
+   grid-area: 1/1/2/2;
+   justify-self: left;
+   background-color: #59ff479c;
+   padding: 2rem .5rem;
+   color: #7068ff;
+   border: 3px outset #8cfffe;
+}
+
+.rentnow p {
+    text-align: center;
+    margin: auto;
+    font-size: larger;
+    font-weight: 900;
+}
+
+.rentnow button {
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ff825c;
+}
+
+/*------------------------------------nav----------------------------------*/
+.sidebar {
+    background-color: #8f8aff;
+    text-align: center;
+    border-bottom: 1px solid #58ff47;
+}
+
+.sidebar #primarynav {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.sidebar #primarynav li {
+    flex: 1 1 100%;
+}
+
+.sidebar a {
+    color: #58ff47;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    border-bottom: 1px solid #7068ff;
+}
+
+.sidebar button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    color: #58ff47;
+    width: 100%;
+}
+
+.sidebar #primarynav li.active a {
+    color: #ff825c;
+}
+
+.sidebar #primarynav.hide, .socialmedia {
+    display: none;
+}
+.wrapper .sidebar ul li.active {
+    background-color: #7068ff;
+}
+
+.wrapper .sidebar ul li:hover {
+    background-color: #7068ff;
+    color: #58ff47;
+}
+
+.wrapper .sidebar ul li:hover a {
+    color: #58ff47
+}
+
+/*----------------------------------Main-----------------------*/
+
+main {
+    width: 100%;
+    padding: 2%;
+}
+
+h2 {
+    font-family: 'Passero One', cursive;
+    font-size: 40px;
+    color: #ff825c;
+    border-bottom: 3px solid #58ff47;
+    margin: 5% 0 2% 0;
+}
+
+h3 {
+    color: #7068ff;
+    margin: 0 0 1% 0;
+}
+
+p {
+    line-height: 1.5rem;
+    margin: 0;
+}
+
+.shawna {
+    text-align: center;
+}
+
+.homepage {
+    display: flex;
+flex-direction: column;
+align-content: space-around;
+}
+
+img {
+    align-self: center;
+    padding: 2%;
+}
+
+main ol {
+
+    list-style: upper-roman;
+    list-style-position: inside;
+    line-height: 1.5rem;
+}
+
+main ol ul,
+ul {
+padding-left: 2%;
+list-style-type: circle;
+line-height: 1.5rem;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/*-------------contact----------------------*/
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px;
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ 
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+ 
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+/*--------------------------FORM-------------------------*/
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+form fieldset {
+    text-align: left;
+    margin: 2rem;
+    border: 5px solid #58ff47;
+    padding: 2rem;
+    width: 80%;
+}
+
+form legend {
+    color: #7068ff;
+    font-weight: 700;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label {
+    display: block;
+    margin: 1rem;
+}
+
+form input {
+    display: block;
+    width: 100%;
+}
+
+form .radio {
+    display: flex;
+}
+
+form .radio label input {
+    margin-bottom: .5rem;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+    max-height: 200px;
+    width: 100%;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    display: block;
+}
+
+form button {
+    border: none;
+    background-color: #ff825c;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: auto;
+    width: 95%;
+    max-width: 20rem;
+    margin-bottom: 10%;
+}
+
+
+/*--------------pricing-----------------*/
+.pricing-table{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    width: min(1600px, 100%);
+    margin: auto;
+}
+
+.pricing-card{
+    flex: 1;
+    max-width: 360px;
+    background-color: white;
+    margin: 20px 10px;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    color: #2d2d2d;
+    transition: .3s linear;
+}
+.pricing-card-header{
+    background-color:black;
+    display: inline-block;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 0 0 20px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transform: .4s linear;
+}
+
+.pricing-card:hover .pricing-card-header{
+    box-shadow: 0 0 0 26em #7068ff;
+
+}
+
+.price{
+    font-size: 70px;
+    color:#8f8aff;
+    margin: 40px 0;
+    transition:.2s linear;
+}
+
+.price sup, .price span{
+    font-size: 22px;
+    font-weight: 700;
+}
+.pricing-card:hover, .pricing-card:hover .price{
+    color: white;
+}
+
+.pricing-card li {
+    font-size: 16px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.order-btn{
+    display: inline-block;
+    margin-bottom: 40px;
+    margin-top: 80px;
+    border: 2px solid #8cfffe;
+    padding: 10px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 500;
+transition: .3s linear;
+
+}
+.order-btn:hover{
+    background-color: darkgrey;
+    color: white;
+
+}
+
+.old{
+    align: right;
+}
+
+
+
+
+
+/*--------------FOOTER--------------------*/
+
+footer {
+    background-color: #ff825c;
+    padding: 2%;
+    font-size: smaller;
+    text-align: center;
+    border-top: 3px solid #58ff47;
+}
+
+footer.thankyoupages {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.column {
+	float: left;
+	width: 33.33%;
+	padding: 5px;
+}
+
+.row::after {
+	content: "";
+	display: table;
+	clear: both;
+}

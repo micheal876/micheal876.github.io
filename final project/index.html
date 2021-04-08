@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Passero+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/join.css">
+    <title>here to help</title>
+</head>
+
+<body>
+    <header>
+        <div class="rentnow">
+            <p>How Will You Start Your Adventure?</p>
+            <button onclick="window.location.href='join.html'">join Now</button>
+        </div>
+
+        <div class="titlelogo">
+            <div class="title">
+                <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+                <h1></h1>
+                <p>Here to make your business great</p>
+            </div>
+           
+        </div>
+
+    </header>
+
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="city.html">CITY</a></li>
+                <li><a href="join.html">JOIN US</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>    
+                <li><a href="Contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+        <main>
+
+            <h2>Who We Are</h2>
+            <img class="shawna" src="image/unite.jpg" width="300" alt="image of being united ">
+
+            <p>
+                Get help is here to help local business advertise there business and products. our goals is to get more local business to join us to make our country a better place. As  we unite with each other we can acomolish accomplish more work for the younger generation to see when ever these business are hiring.   
+            </p>
+
+            <h2>Weather</h2>
+
+            <div class="weather">
+                <section class="currentweather">
+
+                    <h3>Currently: <span id="currently"></span></h3>
+                    <p>Temperature: <span id="currentTemp"></span> &#8457;</p>
+                    <p>Humidity: <span id="humidity"></span> %</p>
+                    <p>Wind Speed: <span id="windSpeed">xx</span>mph</p>
+                    <p>Wind Chill: <span id="chill"></span></p>
+                </section>
+
+                <div class="forecast">
+                    <div class="days">
+                        <h3 id="dayofweek"></h3>
+                        <img id="img" src="#" alt=" ">
+                        <p><span id="forecast"></span> &#8457;</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="image/ja.png" width="100%;">
+                    <a href="https://jadeals.com/">ja deals</a>
+                    <p> Park Plaza, Half Way Tree,
+                        6D Constant Spring Road, Kingston
+                        876-288-7705 / 876-616-9370</p>
+                </div>
+        
+                <div class="column">
+                    <img src="image/bash.png" width="100%;">
+                    <a href="http://bashcotradingcol.gdclicks.com/">Bashco</a>
+                    <p>Spanish Town
+                        36 Burke Rd 876-749-2874 </p>
+                        
+                </div>
+        
+                <div class="column">
+                    <img src="image/juice.png" width="100%;">
+                </div>
+                <a href="http://www.ojaykoolers.com/">ojay Koolers</a>
+                <p>Head office & Manufacturing Plant
+                    26 South Street
+                    Old Harbour
+                    St. Catherine</p>
+            </div>
+            <h1>up coming events</h1>
+
+
+        </main>
+    </div>
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+        </footer>
+    </div>
+    <script src="java/main.js"></script>
+    <script src="java/weather.js"></script>
+</body>
+
+</html>

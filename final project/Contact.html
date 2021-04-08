@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Passero+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/join.css">
+
+    <title>here to help</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="titlelogo">
+            <div class="title">
+                <a href="index.html"><img src="image/logo.png" alt="logo"></a>
+                <h1></h1>
+                <p>Here to make your business great</p>
+            </div>
+           
+        </div>
+    </header>
+
+    <div id="navWrapper">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li ><a href="index.html">HOME</a></li>
+                <li><a href="city.html">CITY</a></li>
+                <li ><a href="join.html">JOIN US</a></li>
+                <li><a href="directory.html">DIRECTORY</a></li>    
+                <li class="active"><a href="Contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+
+        <main>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+
+              <h1> map of the city</h1>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30365.988175362738!2d-77.12741392625526!3d17.943879565818804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb7479fd4a8ac9%3A0x129c7944de3dd836!2sOld%20Harbour!5e0!3m2!1sen!2sjm!4v1617844709268!5m2!1sen!2sjm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60707.68672228255!2d-77.00022053464534!3d18.01450705253696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8edb12e1cd3d06dd%3A0x7eb9355f26bcf0dd!2sSpanish%20Town!5e0!3m2!1sen!2sjm!4v1617844806768!5m2!1sen!2sjm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          
+
+
+        </main>
+    </div>
+    <div id="footerWrapper">
+        <footer>
+            &copy;2021 | Micheal Edwards | Jamaica | <a id="byuilink" href="https://www.byui.edu/online">BYU-I Online
+                Learning</a>
+        </footer>
+    </div>
+    <script src="java/main.js"></script>
+    <script src="java/weather.js"></script>
+</body>
+
+</html>
